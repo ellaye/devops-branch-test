@@ -13,6 +13,7 @@ pipeline{
 	   stage ('checkout scm') {
                steps {
                  checkout(scm)
+		 echo "hello"
                }
             }
 		
