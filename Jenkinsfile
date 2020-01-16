@@ -19,7 +19,7 @@ pipeline{
 	   stage('deploy'){
                steps{
                  kubernetesDeploy(configs: 'deploy/devops-nginx/**', deleteResource: true, enableConfigSubstitution : true, kubeconfigId: "$KUBECONFIG_CREDENTIAL_ID")
-                 sh 'echo dev-01'
+                 sh 'echo dev-02'
                  }
 	    }
      }
