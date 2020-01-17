@@ -12,7 +12,7 @@ pipeline{
     stages {
 	   stage ('checkout scm') {
                steps {
-		 echo '1'
+		 echo '12'
 		 echo 'hi'
                  checkout(scm)
                }
